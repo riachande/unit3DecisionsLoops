@@ -46,13 +46,15 @@ public class GameOfLifeTest
         /* expected pattern for initial state
          *  (X: alive; -: dead)
          * 
-         *    0 1 2 3 4
-         *  0 - - X - -
-         *  1 - - - - -
-         *  2 X X - - -
-         *  3 - - - - -
-         *  4 - - - - -
-         *  
+         *    0 1 2 3 4 5 6 7 
+         *  0 X X X X X X X X  
+         *  1 X X X X - - - - 
+         *  2 X X X X - - - -  
+         *  3 X X X X - - - - 
+         *  4 X X X X - - - -
+         *  5 X X X X - - - -
+         *  6 X X X X - - - - 
+         *  7 X X X X - - - - 
          */
         
         GameOfLife game = new GameOfLife();

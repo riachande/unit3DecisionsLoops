@@ -1,6 +1,6 @@
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.ActorWorld;
-import info.gridworld.actor.Rock;
+import info.gridworld.actor.Flower ;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.BoundedGrid;
 import info.gridworld.grid.Location;
@@ -62,15 +62,15 @@ public class GameOfLife
         Grid<Actor> grid = world.getGrid();
         
         // create and add rocks (a type of Actor) to the three intial locations
-        Rock rock1 = new Rock();
+        Flower rock1 = new Flower();
         Location loc1 = new Location(Y1, X1);
         grid.put(loc1, rock1);
         
-        Rock rock2 = new Rock();
+        Flower rock2 = new Flower();
         Location loc2 = new Location(Y2, X2);
         grid.put(loc2, rock2);
         
-        Rock rock3 = new Rock();
+        Flower rock3 = new Flower();
         Location loc3 = new Location(Y3, X3);
         grid.put(loc3, rock3);
     }
